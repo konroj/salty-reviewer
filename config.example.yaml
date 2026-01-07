@@ -1,0 +1,32 @@
+# Salty Code Reviewer Configuration
+# Copy this file to ~/.salty-reviewer/config.yaml
+
+# GitHub Personal Access Token
+# Required scopes: repo (for private repos) or public_repo (for public only)
+github_token: ghp_your_token_here
+
+# AI API Configuration
+# Supports any OpenAI-compatible API (OpenAI, Azure OpenAI, local models, etc.)
+ai_api_url: https://api.openai.com/v1
+ai_api_key: sk-your-api-key-here
+ai_model: gpt-4
+
+# Writing Style for reviews and responses
+# Options: corporate, passive_aggressive, tech_bro, academic
+writing_style: passive_aggressive
+
+# Nitpicky Level (1-10)
+# 1 = Only comment on critical issues
+# 5 = Standard code review
+# 10 = Comment on EVERYTHING
+nitpicky_level: 5
+
+# Liked Reviewers - Go easy on these folks
+liked_reviewers:
+  - friendly_colleague
+  - mentor
+
+# Disliked Reviewers - Extra scrutiny for these
+disliked_reviewers:
+  - that_one_guy
+  - nitpick_nancy
